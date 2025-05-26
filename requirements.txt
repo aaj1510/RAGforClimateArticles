@@ -1,0 +1,6 @@
+fastembed
+langchain-community
+pypdf
+chromadb
+langchain_ollama
+langchain_chroma
