@@ -1,7 +1,7 @@
 🔍 ClimateRAG: A RAG Pipeline for Climate Article Analysis
 ClimateRAG is a Retrieval-Augmented Generation (RAG) pipeline designed to assist in querying and understanding climate-related articles. This is also specific to my use case, as i tend to do much research on climate-tech. Of course, any document can be fed to achieve similar results. 
 
-🚧 Note: This project is currently in development. Core components have been implemented, and I'm working on solving dependency issues and bugs.
+🚧 Note: This project is currently in development towards improving it's features.
 
 🧠 Project Purpose
 Climate literature is vast and growing. This RAG implementation would help distill knowledge from content fed, by combining retrieval-based search with generation using Llama3. This way, instead of relying solely on static search or generic AI models, answers are generated from the pdf content. 
@@ -32,23 +32,16 @@ LLaMA 3 (via Ollama) — Used for generating grounded answers from retrieved con
 
  llama3 generation strictly grounded in retrieved content
 
- Potential improvements:
- Improve chunking and semantic splitting
+ Ensure ollama is running, and then pull the desired model from ollama (llama3). More instructions in notebook
 
+ Improvements I'm working on:
  Refine prompt templates for accuracy and consistency
 
- Build a front-end or API for user interaction
-
- Add more evaluation scripts and benchmarks for debugging
+ Build a front-end or API for user interaction, able to upload multiple docs at a time
 
  Fine-tuning implementation 
 
-
-🐛 Known Issues / Work in Progress
-Prompt tuning for optimal relevance
-
-Chunking strategy improvements to reduce context fragmentation
-
-Bugs in retrieval logic and embedding mismatch
-
-UI/API integration not yet implemented
+🐛 Some things i learnt and experienced:
+llama3 model could not answer some questions I had, though it performed relatively well considering it's size. This is a wip. 
+llama3 runs slowly, my device's RAM is limited in that sense. On a 16GB RAM minimally, it would improve performance significantly. 
+Prompts need to be better crafted, so that llama can be more accurate
