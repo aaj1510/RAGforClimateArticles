@@ -19,7 +19,8 @@ Python — Core implementation language
 
 LLaMA 3 (via Ollama) — Used for generating grounded answers from retrieved content, ideal for this use-case.
 
-🧩Steps (WIP)
+🧩Steps:
+
  Load and preprocess pdf/text file via langchain's splitting documents method
 
  Embed documents using HuggingFace embeddings, tokenisation and verification of llama3 model
@@ -34,7 +35,7 @@ LLaMA 3 (via Ollama) — Used for generating grounded answers from retrieved con
 
  Ensure ollama is running, and then pull the desired model from ollama (llama3). More instructions in notebook
 
- Improvements I'm working on:
+ 🧠**Improvements I'm working on**:
  Refine prompt templates for accuracy and consistency
 
  Build a front-end or API for user interaction, able to upload multiple docs at a time
