@@ -7,15 +7,15 @@ ClimateRAG is a Retrieval-Augmented Generation (RAG) pipeline designed to assist
 Climate literature is vast and growing. This RAG implementation would help distill knowledge from content fed, by combining retrieval-based search with generation using Llama3. This way, instead of relying solely on static search or generic AI models, answers are generated from the pdf content. 
 
 🏗️ Current Tech Stack
-LangChain — Framework for chaining together LLM workflows
+1) LangChain is a framework for chaining together LLM workflows
 
-Ollama — Lightweight LLM runner for local model inference
+2) Ollama is a lightweight LLM runner for local model inference, it is easy to host it on my computer.
 
-HuggingFace Transformers — For model loading and tokenisation
+3) HuggingFace Transformers provides a library of models and transformers to inference
 
-ChromaDB — Open-source vector database used to store and retrieve document embeddings, easy to use and setup
+4) ChromaDB is an open-source vector database used to store and retrieve document embeddings
 
-Python — Core implementation language
+5) Python was used as a core implementation language
 
 LLaMA 3 (via Ollama) — Used for generating grounded answers from retrieved content, ideal for this use-case.
 
@@ -43,6 +43,6 @@ LLaMA 3 (via Ollama) — Used for generating grounded answers from retrieved con
  Fine-tuning implementation 
 
 🐛 Some things i learnt and experienced:
-llama3 model could not answer some questions I had, though it performed relatively well considering it's size. This is a wip. 
+llama3 model could not answer some questions I had, though it performed relatively well considering it's size. This is a work in progress.
 llama3 runs slowly, my device's RAM is limited in that sense. On a 16GB RAM minimally, it would improve performance significantly. 
 Prompts need to be better crafted, so that llama can be more accurate
